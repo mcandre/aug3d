@@ -2,7 +2,7 @@
 
 ## EXAMPLES
 
-[screenshot](https://github.com/mcandre/aug3d/raw/master/shot.png)
+![screenshot](https://github.com/mcandre/aug3d/raw/master/shot.png)
 
 	$ python aug3d.py
 	...
