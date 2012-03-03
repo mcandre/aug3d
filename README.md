@@ -1,5 +1,10 @@
 # aug3d - Augmented Reality with 3D glasses
 
+## REQUIREMENTS
+
+ * [Python](http://python.org/)
+ * [SimpleCV](http://simplecv.org/)
+
 ## EXAMPLES
 
 ![screenshot](https://github.com/mcandre/aug3d/raw/master/shot.png)
@@ -8,10 +13,6 @@
 	...
 
 ## CREDITS
-
-### Libraries
-
-[SimpleCV](http://simplecv.org/)
 
 ### Haar patterns
 
