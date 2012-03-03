@@ -5,7 +5,6 @@
 # 2 March 2012
 
 import SimpleCV
-import random
 import sys
 import os
 import time
