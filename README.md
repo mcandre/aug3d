@@ -9,8 +9,10 @@
 
 ![screenshot](https://github.com/mcandre/aug3d/raw/master/shot.png)
 
-	$ python aug3d.py
-	...
+```
+$ python aug3d.py
+...
+```
 
 ## CREDITS
 
