@@ -7,6 +7,7 @@
 
 ## Optional
 
+* [pep8](https://pypi.python.org/pypi/pep8)
 * [libxml2](http://xmlsoft.org/)
 
 # EXAMPLES
