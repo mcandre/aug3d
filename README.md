@@ -24,7 +24,7 @@ $ python aug3d.py
 E.g., Mac users can install these dependencies with:
 
 ```
-$ brew install python
+$ brew install libxml2 python
 ```
 
 ```
