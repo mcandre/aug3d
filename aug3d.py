@@ -14,9 +14,9 @@ def main():
 
     d = os.path.abspath(os.path.dirname(sys.argv[0])) + os.sep
 
-    haar = d + "haar-eyes.xml"
+    haar = d + 'haar-eyes.xml'
 
-    shades = SimpleCV.ImageClass.Image(d + "glasses.png")
+    shades = SimpleCV.ImageClass.Image(d + 'glasses.png')
 
     while True:
         image = camera.getImage()
@@ -38,7 +38,7 @@ def main():
 
         time.sleep(0.05)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
