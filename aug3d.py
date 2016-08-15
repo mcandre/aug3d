@@ -31,8 +31,8 @@ def main():
                 coords = feature.coordinates()
 
                 image.blit(shades, (coords[0], coords[1]), True)
-        except:
-            pass
+        except Exception as e:
+            print(e)
 
         image.show()
 
