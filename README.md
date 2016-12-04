@@ -11,7 +11,7 @@ $ python aug3d.py
 
 # REQUIREMENTS
 
- * [Python](http://python.org/)
+ * [python](http://python.org/)
  * [SimpleCV](http://simplecv.org/)
 
 ## Optional
@@ -20,16 +20,8 @@ $ python aug3d.py
 * [pylint](https://pypi.python.org/pypipylint)
 * [pyflakes](https://pypi.python.org/pypi/pyflakes)
 * [libxml2](http://xmlsoft.org/)
-
-E.g., Mac users can install these dependencies with:
-
-```
-$ brew install libxml2 python
-```
-
-```
-$ pip install pep8 pylint pyflakes
-```
+* [shlint](https://rubygems.org/gems/shlint)
+* [shellcheck](http://hackage.haskell.org/package/ShellCheck)
 
 # CREDITS
 
