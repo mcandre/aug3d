@@ -20,6 +20,8 @@ $ python aug3d.py
 * [pylint](https://pypi.python.org/pypipylint)
 * [pyflakes](https://pypi.python.org/pypi/pyflakes)
 * [libxml2](http://xmlsoft.org/)
+* [pargs](https://github.com/mcandre/pargs)
+* [editorconfig-tools](https://www.npmjs.com/package/editorconfig-tools)
 * [shlint](https://rubygems.org/gems/shlint)
 * [shellcheck](http://hackage.haskell.org/package/ShellCheck)
 
