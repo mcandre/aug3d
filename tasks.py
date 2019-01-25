@@ -2,6 +2,11 @@ from invoke import run, task
 
 
 @task
+def safety():
+    run('safety check')
+
+
+@task
 def pep8():
     run('pep8 .')
 
@@ -37,11 +42,6 @@ def bandit():
 
 
 @task
-def shlint():
-    run('find . \\( -wholename \'*/node_modules*\' \\) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs shlint')
-
-
-@task
 def checkbashisms():
     run('find . \\( -wholename \'*/node_modules*\' \\) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs checkbashisms -n -p')
 
@@ -51,6 +51,6 @@ def shellcheck():
     run('find . \\( -wholename \'*/node_modules*\' \\) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs shellcheck')
 
 
-@task(pre=[pep8, pylint, pyflakes, flake8, editorconfig, xmllint, bandit, shlint, checkbashisms, shellcheck])
+@task(pre=[safety, pep8, pylint, pyflakes, flake8, editorconfig, xmllint, bandit, shlint, checkbashisms, shellcheck])
 def lint():
     pass

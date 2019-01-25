@@ -4,26 +4,23 @@
 
 ![screenshot](https://github.com/mcandre/aug3d/raw/master/shot.png)
 
-```
+```console
 $ python aug3d.py
 ...
 ```
 
 # REQUIREMENTS
 
- * [python](http://python.org/)
+ * [Python](http://python.org/) 3+
  * [SimpleCV](http://simplecv.org/)
 
 ## Optional
 
-* [pep8](https://pypi.python.org/pypi/pep8)
-* [pylint](https://pypi.python.org/pypipylint)
-* [pyflakes](https://pypi.python.org/pypi/pyflakes)
-* [libxml2](http://xmlsoft.org/)
-* [pargs](https://github.com/mcandre/pargs)
-* [editorconfig-tools](https://www.npmjs.com/package/editorconfig-tools)
-* [shlint](https://rubygems.org/gems/shlint)
-* [shellcheck](http://hackage.haskell.org/package/ShellCheck)
+* [Python](https://www.python.org/) 3+
+* [GHC Haskell](https://www.haskell.org/) 8+
+* [Go](https://golang.org/) 1.9+
+* [GNU make](https://www.gnu.org/software/make/)
+* [checkbashisms](https://sourceforge.net/projects/checkbaskisms/)
 
 # CREDITS
 
