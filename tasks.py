@@ -51,6 +51,6 @@ def shellcheck():
     run('find . \\( -wholename \'*/node_modules*\' \\) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs shellcheck')
 
 
-@task(pre=[safety, pep8, pylint, pyflakes, flake8, editorconfig, xmllint, bandit, shlint, checkbashisms, shellcheck])
+@task(pre=[safety, pep8, pylint, pyflakes, flake8, editorconfig, xmllint, bandit, checkbashisms, shellcheck])
 def lint():
     pass
