@@ -28,7 +28,9 @@ def flake8():
 
 @task
 def editorconfig():
-    run('git ls-files -z | grep -av patch | xargs -0 -r -n 100 $(shell npm bin)/eclint check')
+    run('''git ls-files -z |
+        grep -av patch |
+        xargs -0 -r -n 100 $(shell npm bin)/eclint check''')
 
 
 @task
@@ -37,20 +39,31 @@ def xmllint():
 
 
 @task
-def bandit():
-    run('find . -name \'*.py\' | xargs bandit')
-
-
-@task
 def checkbashisms():
-    run('find . \\( -wholename \'*/node_modules*\' \\) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs checkbashisms -n -p')
+    run('stank . | grep -v node_modules | xargs checkbashisms')
 
 
 @task
 def shellcheck():
-    run('find . \\( -wholename \'*/node_modules*\' \\) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs shellcheck')
+    run('stank -exInterp zsh . | grep -v node_modules | xargs shellcheck')
 
 
-@task(pre=[safety, pep8, pylint, pyflakes, flake8, editorconfig, xmllint, bandit, checkbashisms, shellcheck])
+@task
+def funk():
+    run('funk .')
+
+
+@task(pre=[
+    safety,
+    pep8,
+    pylint,
+    pyflakes,
+    flake8,
+    editorconfig,
+    xmllint,
+    checkbashisms,
+    shellcheck,
+    funk
+    ])
 def lint():
     pass
